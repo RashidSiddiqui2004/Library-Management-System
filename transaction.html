@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Transactions</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleTransact.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container" style="display: flex;">
+            <div class="logo">
+                <a href="#" id="logo">Library Management</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="details.html">Books</a></li>
+                <li><a href="#">Borrowers</a></li>
+                <li><a href="transaction.html">Transactions</a></li>
+                <li><a href="register.html">Log-In</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="transaction-page">
+        <div class="container">
+            <h1>Library Transactions</h1>
+
+            <div class="transaction-form">
+                <h2>Transaction Details</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="transaction-type">Transaction Type:</label>
+                        <select id="transaction-type" name="transaction-type" required>
+                            <option value="borrow">Borrow</option>
+                            <option value="return">Return</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-title">Book Title:</label>
+                        <input type="text" id="book-title" name="book-title" placeholder="Enter book title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="borrower-rollno">Borrower RollID:</label>
+                        <input type="text" id="borrower-rollno" name="borrower-rollno"
+                            placeholder="Enter borrower Roll-Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="borrower-name">Borrower Name:</label>
+                        <input type="text" id="borrower-name" name="borrower-name" placeholder="Enter borrower name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="transaction-date">Transaction Date:</label>
+                        <input type="date" id="transaction-date" name="transaction-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="remarks">Remarks(if any):</label>
+                        <input type="text" id="remarks" name="remarks">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Transaction history table goes here -->
+
+            <div class="transaction-history">
+                <h2 style="text-align: center;">Transaction History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transaction Type</th>
+                            <th>Book Title</th>
+                            <th>Borrower Name</th>
+                            <th>Transaction Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Borrow</td>
+                            <td style="background-color: aquamarine;">The Great Gatsby</td>
+                            <td>John Doe</td>
+                            <td>2023-09-15</td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div> 
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container2">
+            <p>&copy; 2023 Library Management System</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+
+
+/* font-family: 'Bricolage Grotesque', sans-serif;
+
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.navbar {
+    background-color: #19bdcc; 
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(107, 13, 13, 0.685);
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1a51c7;
+}
+
+
+body{
+    background-color: rgba(0, 101, 64, 0.816);
+}
+
+#heading{
+    font-family: 'Merriweather', serif;
+    align-items: center;
+    text-align: center;
+    color: rgba(227, 227, 227, 0.984);
+    margin-top: 2%;
+}
+
+
+.hero {
+    background-image:url('/lib.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.hero::before{
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #dd2a0f;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #15f393; 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 3%;
+    font-size: large;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ce3021bd; 
+    color: white;
+}
+
+/* Features section styles */
+.features {
+    background-color: #85aed7;
+    padding: 50px 0;
+}
+
+.features h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
